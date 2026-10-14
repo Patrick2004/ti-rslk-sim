@@ -1,4 +1,4 @@
-# rslk-sim
+# TI-RSLK MAX robot simulator
 
 **Test your TI-RSLK MAX robot code at home, without the robot.**
 
@@ -26,18 +26,9 @@ and your lab code use.
 
 ## Contents
 
-- [Features](#features)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Quick start](#quick-start)
-- [Using the window](#using-the-window)
-- [Worlds](#worlds)
-- [Headless runs](#headless-runs)
-- [Debugging with gdb or VS Code](#debugging-with-gdb-or-vs-code)
-- [What is simulated](#what-is-simulated)
-- [Accuracy and limits](#accuracy-and-limits)
-- [Development](#development)
-- [Acknowledgements and disclaimer](#acknowledgements-and-disclaimer)
+- **Getting started:** [Features](#features) · [Requirements](#requirements) · [Installation](#installation) · [Quick Start](#quick-start)
+- **Using it:** [Controls](#using-the-window) · [Worlds](#worlds) · [Headless Mode](#headless-mode) · [Debugging](#debugging-with-gdb-or-vs-code)
+- **Reference:** [Simulation Models](#simulation-models) · [Accuracy and Limits](#accuracy-and-limits) · [Development](#development) · [Acknowledgements](#acknowledgements-and-disclaimer)
 
 ## Features
 
@@ -143,7 +134,7 @@ edit the line points, walls and start pose. [`tools/make_worlds.py`](tools/make_
 shows how the bundled ones are generated. You can also use a floor image:
 `"image": {"file": "track.png", "meters_per_pixel": 0.001}`.
 
-## Headless runs
+## Headless Mode
 
 Run without a window for quick checks, with UART output printed in the terminal:
 
@@ -199,7 +190,7 @@ C:\ti\ccsv7\tools\compiler\gcc-arm-none-eabi-6-2017-q1-update\bin\arm-none-eabi-
 
 Don't use gdb's `load` command. The simulator has already loaded the program.
 
-## What is simulated
+## Simulation Models
 
 | Part | Model |
 |---|---|
