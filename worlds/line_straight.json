@@ -1,0 +1,29 @@
+{
+ "name": "Straight line",
+ "description": "A 2.5 m straight line - speed, odometry and steering tests",
+ "size": [
+  3.0,
+  0.8
+ ],
+ "background": 1.0,
+ "lines": [
+  {
+   "points": [
+    [
+     0.25,
+     0.4
+    ],
+    [
+     2.75,
+     0.4
+    ]
+   ],
+   "width": 0.019
+  }
+ ],
+ "start": [
+  0.3,
+  0.4,
+  0.0
+ ]
+}

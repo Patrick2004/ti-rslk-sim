@@ -1,0 +1,24 @@
+{
+    // Starts the simulator window with a GDB server; launch.json attaches to it.
+    // Change "line_oval" to the world you want (python -m rslk_sim --list-worlds).
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "RSLK simulator",
+            "type": "process",
+            "command": "python",
+            "args": ["-m", "rslk_sim", "${workspaceFolder}/Debug/${workspaceFolderBasename}.out",
+                     "--gdb", "3333", "--world", "line_oval"],
+            "isBackground": true,
+            "problemMatcher": {
+                "owner": "rslk-sim",
+                "pattern": { "regexp": "^__never_matches__$" },
+                "background": {
+                    "activesBegin": true,
+                    "beginsPattern": "GDB server listening",
+                    "endsPattern": "GDB server listening"
+                }
+            }
+        }
+    ]
+}

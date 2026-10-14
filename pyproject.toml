@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rslk-sim"
+version = "0.1.0"
+description = "Run CCS-built TI-RSLK MAX (MSP432P401R) programs on a simulated robot"
+readme = "README.md"
+authors = [{ name = "Patrick" }]
+requires-python = ">=3.9"
+dependencies = ["unicorn>=2.0.1", "pyelftools>=0.29", "pygame-ce>=2.4"]
+keywords = ["msp432", "ti-rslk", "robot", "simulator", "emulator", "cortex-m4", "education"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Education",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Education",
+    "Topic :: Software Development :: Embedded Systems",
+    "Topic :: System :: Emulators",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+rslk-sim = "rslk_sim.__main__:main"
+
+[tool.setuptools]
+packages = ["rslk_sim", "rslk_sim.periph", "rslk_sim.robot"]

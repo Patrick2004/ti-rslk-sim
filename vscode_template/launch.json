@@ -1,0 +1,24 @@
+{
+    // Copy this folder's two files into <your CCS project>/.vscode/ and press F5.
+    // Needs the "C/C++" extension (ms-vscode.cpptools).
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug on RSLK simulator",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/Debug/${workspaceFolderBasename}.out",
+            "cwd": "${workspaceFolder}",
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-6-2017-q1-update/bin/arm-none-eabi-gdb.exe",
+            "miDebuggerServerAddress": "localhost:3333",
+            "stopAtEntry": false,
+            "externalConsole": false,
+            "preLaunchTask": "RSLK simulator",
+            "setupCommands": [
+                { "text": "set remotetimeout 20" },
+                { "text": "set mem inaccessible-by-default off" }
+            ]
+        }
+    ]
+}

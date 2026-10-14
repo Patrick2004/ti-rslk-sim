@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+
+# Test firmware built by tools/build_fw.py
+fw_tests/build/
+
+# CCS / compiler output (never commit programs built from course material)
+*.out
+*.elf
+*.obj
+*.map
+Debug/
+
+# Output written by the simulator
+*.csv
+/screenshot*.png
+
+# Editors / OS
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+.DS_Store
+tests/data/

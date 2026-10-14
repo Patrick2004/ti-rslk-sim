@@ -1,0 +1,4 @@
+unicorn>=2.0.1
+pyelftools>=0.29
+pygame-ce>=2.4
+pytest
